@@ -1,0 +1,96 @@
+.bg-2 {
+  background-color: #333333 !important;
+  color: white !important;
+}
+
+@for $i from 1 through 100 {
+  .my-#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+  .mx-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+  .pdy-#{$i} {
+    padding-top: #{$i}px !important;
+    padding-bottom: #{$i}px !important;
+  }
+  .pdx-#{$i} {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+  .br-#{$i} { 
+    border-radius: #{$i}px !important;
+  }
+  .pd-#{$i} { 
+    padding: #{$i}px !important;
+  }
+}
+
+@for $i from 1 through 800 {
+  .w-#{$i} {
+    width: #{$i}px !important;
+  }
+
+  .h-#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+@for $i from 1 to 7 {
+    h#{$i} { 
+        font-size: calc(1.8em - #{$i}px * 1.2) !important; 
+        font-weight: 600 !important;
+    }
+}
+
+.ta-l {
+  text-align: left !important;
+}
+
+.ta-r {
+  text-align: right !important;
+}
+
+.ta-c {
+  text-align: center !important;
+}
+
+
+.column {
+    flex-direction: column !important;
+}
+
+.ai-c {
+    align-items: center !important; 
+}
+
+.ai-fs {
+    align-items: flex-start !important;
+}
+.jc-c {
+    justify-content: center !important;
+}
+
+.jc-fs {
+    justify-content: flex-start !important;
+}
+
+.dflex{
+display: flex !important 
+}
+
+.loading {
+    animation: loading-anim 1s linear infinite;
+}
+
+@keyframes loading-anim {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .3;
+  }
+}
